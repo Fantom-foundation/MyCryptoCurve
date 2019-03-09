@@ -19,10 +19,10 @@ const ErrorScreen: React.SFC<Props> = ({ error }) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href={`mailto:support@cryptocurve.io?Subject=${SUBJECT}&body=${DESCRIPTION}`}
+            href={`mailto:support@fantom.foundation?Subject=${SUBJECT}&body=${DESCRIPTION}`}
             style={{ color: 'black' }}
           >
-            support@cryptocurve.io
+            support@fantom.foundationio
           </a>{' '}
         </p>
         <code>{error.message}</code>

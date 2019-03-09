@@ -23,7 +23,7 @@ export interface CallbackProps {
 
 interface StateProps {
   walletType: IWalletType;
-  serializedTransaction: AppState['transaction']['sign']['local']['wanSignedTransaction'];
+  serializedTransaction: AppState['transaction']['sign']['local']['signedTransaction'];
   transaction: EthTx;
   isFullTransaction: boolean;
   networkRequestPending: boolean;

@@ -28,7 +28,6 @@ const signLocalTransactionSucceeded = (
 
   local: {
     signedTransaction: payload.signedTransaction,
-    wanSignedTransaction: payload.wanSignedTransaction
   },
   web3: { transaction: null }
 });

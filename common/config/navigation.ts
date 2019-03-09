@@ -32,4 +32,4 @@ export const navigationLinks: NavigationLink[] = [openWallet, newWallet, viewAdd
   (link: NavigationLink) => !link.disabled
 );
 
-export const navigationLinksLandingPage: NavigationLink[] = [openWallet, learnMore];
+export const navigationLinksLandingPage: NavigationLink[] = [openWallet];

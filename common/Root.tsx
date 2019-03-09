@@ -35,6 +35,7 @@ import WebTemplate from './containers/TabSection/WebTemplate';
 export enum Colors {
   white = '#fff',
   purpley = '#8964DC',
+  blueey = '#00B1FF',
   lavender = '#beaceb',
   lightLavender = '#e4d9ff',
   dark = '#272532',
@@ -43,7 +44,7 @@ export enum Colors {
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: Colors.purpley
+      main: Colors.blueey
     },
     secondary: {
       main: '#40409A'
@@ -110,8 +111,13 @@ const theme = createMuiTheme({
     }
   },
   overrides: {
+    MuiTab: {
+      root: {
+      }
+    },
     MuiButton: {
       root: {
+        color: '#fff !important',
         borderRadius: 50,
         minHeight: 60,
         textTransform: 'none',

@@ -36,23 +36,19 @@ interface FooterMenuColumn {
 
 const footerMenuItems: FooterMenuColumn[] = [
   {
-    title: 'Curve EcoSystem',
+    title: 'Fantom EcoSystem',
     items: [
       {
         name: 'Block Explorer',
-        link: ''
+        link: 'https://blockscout.fantom.network'
       },
       {
-        name: 'Web Application',
-        link: ''
+        name: 'Fantom Site',
+        link: 'https://fantom.foundation'
       },
       {
-        name: 'Mobile App',
-        link: ''
-      },
-      {
-        name: 'Curve Site',
-        link: ''
+        name: 'Fantom Faucet',
+        link: 'https://faucet.fantom.network'
       }
     ]
   },
@@ -60,20 +56,12 @@ const footerMenuItems: FooterMenuColumn[] = [
     title: 'About',
     items: [
       {
-        name: 'Privacy Policy',
-        link: 'https://cryptocurve.network/#privacyPolicy'
-      },
-      {
-        name: 'Cookie Policy',
-        link: 'https://cryptocurve.network/#cookiePolicy'
-      },
-      {
         name: 'About Us',
-        link: 'https://cryptocurve.io/about#'
+        link: 'https://fantom.foundation/'
       },
       {
         name: 'Press',
-        link: 'https://www.google.co.za/search?tbm=nws&q=cryptocurve&oq=cryptocurve'
+        link: 'https://www.google.co.za/search?tbm=nws&q=fantom&oq=fantom'
       }
     ]
   },
@@ -82,15 +70,15 @@ const footerMenuItems: FooterMenuColumn[] = [
     items: [
       {
         name: 'Contact Us',
-        link: 'https://cryptocurve.io/contact'
+        link: 'https://fantom.foundation/'
       },
       {
         name: 'Blog',
-        link: 'https://cryptocurve.io/blog'
+        link: 'https://fantom.foundation/'
       },
       {
         name: 'FAQ',
-        link: 'https://cryptocurve.io/#faq'
+        link: 'https://fantom.foundation/'
       }
     ]
   }
@@ -99,7 +87,7 @@ const footerMenuItems: FooterMenuColumn[] = [
 const styles = (theme: Theme) =>
   createStyles({
     footerContentGrid: {
-      backgroundColor: Colors.dark,
+      backgroundColor: Colors.blueey,
       color: Colors.white,
       paddingTop: theme.spacing.unit * 10,
       paddingBottom: theme.spacing.unit * 10
@@ -190,7 +178,6 @@ class Footer extends React.PureComponent<Props, State> {
         <Grid container={true} className={classes.footerContentGrid}>
           <Grid item={true} md={3}>
             <Grid container={true} direction="row" spacing={16} justify="center">
-              <img src={FooterLogo} className={classes.footerImage} />
               {false && (
                 <React.Fragment>
                   <Grid item={true}>
@@ -265,7 +252,7 @@ class Footer extends React.PureComponent<Props, State> {
           spacing={16}
         >
           <Grid item={true}>
-            <Typography color="inherit">{`© ${new Date().getFullYear()} CryptoCurve & MyCrypto, Inc.`}</Typography>
+            <Typography color="inherit">{`© ${new Date().getFullYear()} Fantom Foundation & CryptoCurve & MyCrypto, Inc.`}</Typography>
           </Grid>
           <Grid item={true}>
             <Typography color="inherit">{VERSION}</Typography>

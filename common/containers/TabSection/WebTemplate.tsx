@@ -17,10 +17,9 @@ import { Theme } from '@material-ui/core';
 const styles = (theme: Theme) =>
   createStyles({
     background: {
-      backgroundImage: `url(${BackgroundImage})`,
       backgroundPosition: 'center top',
       backgroundRepeat: 'no-repeat',
-      backgroundColor: '#35286E',
+      backgroundColor: '#00B1FF', 
       top: 0,
       position: 'absolute',
       left: 0,

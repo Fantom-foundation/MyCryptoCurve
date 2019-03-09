@@ -9,8 +9,8 @@ import {
 import { SelectedNodeState as State } from './types';
 
 export const INITIAL_STATE: State = {
-  nodeId: 'wan_infura',
-  prevNode: 'wan_infura',
+  nodeId: 'ftm',
+  prevNode: 'ftm',
   pending: false
 };
 

@@ -15,17 +15,7 @@ const signaturePending = (state: AppState) => {
 };
 
 const getSignedTx = (state: AppState) => {
-  /*if getSignState(state).local.wanSignedTransaction {
-    return getSignState(state).local.wanSignedTransaction;
-  } else {*/
   return getSignState(state).local.signedTransaction;
-  //}
-};
-const getWanSignedTx = (state: AppState) => {
-  /*if getSignState(state).local.wanSignedTransaction {
-    return getSignState(state).local.wanSignedTransaction;
-  } else {*/
-  return getSignState(state).local.wanSignedTransaction;
   //}
 };
 
@@ -65,7 +55,6 @@ export const getParamsFromSerializedTx = (state: AppState): SerializedTxParams =
 export {
   signaturePending,
   getSignedTx,
-  getWanSignedTx,
   getWeb3Tx,
   getSignState,
   getSerializedTransaction

@@ -201,9 +201,6 @@ class Header extends Component<Props, State> {
           <Grid container={true} className={classes.headerGrid} alignItems="center">
             <Grid item={true} xs={12} sm={2} className={classes.logoGrid}>
               <Link to={'/'} className={classes.link} onClick={this.handleChange.bind(this, {}, 0)}>
-                <Typography variant="headline" color="inherit" className={classes.logoText}>
-                  MyCryptoCurve
-                </Typography>
               </Link>
             </Grid>
             <Grid className={classes.grow} />
@@ -218,7 +215,7 @@ class Header extends Component<Props, State> {
                   indicator: classes.indicator
                 }}
               >
-                <Tab style={{ display: 'none' }} />
+                <Tab style={{ display: 'none', color: 'white' }} />
                 {navigationLinks.map((link: NavigationLink, index: number) => {
                   return (
                     <Tab

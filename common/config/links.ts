@@ -16,15 +16,15 @@ export const DOWNLOAD_MYCRYPTO_LINK = 'https://download.mycrypto.com/';
 
 export const socialMediaLinks: Link[] = [
   {
-    link: 'https://twitter.com/crypto_curve',
+    link: 'https://twitter.com/fantomfdn',
     text: 'twitter'
   },
   {
-    link: 'https://www.facebook.com/CryptoCurve/',
+    link: 'https://www.facebook.com/Fantom.Foundation.English/',
     text: 'facebook'
   },
   {
-    link: 'https://medium.com/@Cryptocurve',
+    link: 'https://medium.com/fantomfoundation',
     text: 'medium'
   }
 ];
